@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skyline Weather</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="clear">
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+
+  <main class="card">
+    <h1>Sky<span>line</span></h1>
+
+    <form id="search-form">
+      <input type="text" id="city-input" placeholder="Search city..." required>
+      <button type="submit">Search</button>
+    </form>
+
+    <p id="message"></p>
+    <div class="chips" id="chips"></div>
+
+    <section id="weather" class="hidden">
+      <h2 id="city-name"></h2>
+      <div id="icon"></div>
+      <div class="temp"><span id="temp"></span>°C</div>
+      <p id="description"></p>
+
+      <div class="details">
+        <div><span>💧 Humidity</span><strong id="humidity"></strong></div>
+        <div><span>💨 Wind</span><strong id="wind"></strong></div>
+        <div><span>🌡️ Feels like</span><strong id="feels"></strong></div>
+      </div>
+    </section>
+
+    <p class="note">Live data from OpenWeatherMap</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
